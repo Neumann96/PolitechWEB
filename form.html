@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форму заполни</title>
+    <link rel="stylesheet" href="style_form.css">
+</head>
+<body>
+    <div class="form">
+        <header>
+            <a href="index.html">На главную!</a>
+        </header>
+
+        <form action="">
+            <fieldset>
+                <legend>Заполни пожалуйста</legend>
+
+                <p>Личные данные:</p>
+                <label>Имя <input type="text" placeholder="Ваня" required></label><br>
+                <label>ДР <input type="date" required></label><br>
+                <label>Ваш пол <select name="Пол?">
+                    <option value="option1">Мужской</option>
+                    <option value="option2">Женский</option>
+                </select><br>
+                </label>
+                <label>Пароль <input type="password" placeholder="Parirumchik" required></label><br>
+
+                <p>Контактные данные:</p>
+                <label>Почта <input type="email" placeholder="eshkere@skrrr.yo"></label><br>
+                <label>Телефон <input type="tel" placeholder="+7... ... .. .." required></label><br>
+
+                <p>Когда удобно связаться:</p>
+                <label for="morning">Утро<input type="radio" name="time" value="Утро"></label><br>
+                <label for="day">День<input type="radio" name="time" value="День" checked></label><br>
+                <label for="toonight">Вечер<input type="radio" name="time" value="Вечер"></label><br>
+                <label for="night">Ночь<input type="radio" name="time" value="Ночь"></label><br>
+                <button>Отправить</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

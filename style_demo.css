@@ -1,0 +1,93 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+.gradient-linear {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to right, #9c5fff, #feb47b);
+    margin-bottom: 20px;
+}
+
+.gradient-radial {
+    width: 300px;
+    height: 200px;
+    background: radial-gradient(circle, #ff7e5f, #7b9afe);
+    margin-bottom: 20px;
+}
+
+.gradient-conic {
+    width: 300px;
+    height: 200px;
+    background: conic-gradient(#97ff5f, #fe7b7b, #5fdfff);
+    margin-bottom: 20px;
+}
+
+.square_2d {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    animation: rotate 4s linear infinite; /* Анимация вращения */
+    animation-delay: 3s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* Начальный угол */
+    }
+    to {
+        transform: rotate(360deg); /* Конечный угол */
+    }
+}
+
+.square_3d {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #00eeff, #ff00ae);
+    animation: rotateAndMove 5s infinite linear; /* Анимация вращения и перемещения */
+}
+
+@keyframes rotateAndMove {
+    0% {
+        transform: translateX(0) translateY(0) translateZ(0) rotateZ(0deg) rotateX(0);
+    }
+    50% {
+        transform: translateX(50px) translateY(-50px) translateZ(100px) rotateZ(180deg) rotateX(180deg); /* Поднимаем квадрат на 100 пикселей */
+    }
+    100% {
+        transform: translateX(0) translateY(0) translateZ(0) rotateZ(360deg) rotateX(0); /* Возвращаем на место */
+    }
+}
+
+.transition-box {
+    width: 100px;
+    height: 100px;
+    background-color: #9C27B0;
+    transition: background-color 0.5s ease;
+}
+
+.transition-box:hover {
+    background-color: #E91E63;
+}
+
+.transition-scale {
+    width: 100px;
+    height: 100px;
+    background-color: #3F51B5;
+    transition: transform 0.5s ease;
+}
+
+.transition-scale:hover {
+    transform: scale(1.2);
+}

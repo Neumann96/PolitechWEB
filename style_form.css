@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input, select {
+    margin-bottom: 10px;
+}
+
+p {
+    text-decoration: underline;
+    text-shadow: 1px 1px 10px brown;
+}
+
+a {
+    text-decoration: none;
+    border: 3px solid black;
+    color: black;  
+    border-radius: 4px; 
+    padding: 5px;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+a:active {
+    background-color: aqua;
+    color: black;
+}
+
+a:focus {
+    border: 3px solid springgreen;
+    color: springgreen;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 30%;
+    border-radius: 4px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+button:active {
+    background-color:deeppink;
+    color: black;
+}
+
+button:focus {
+    border: 3px solid springgreen;
+    color: springgreen;
+}
+
+fieldset {
+    border: 2px dashed black;
+}
+
+::placeholder {
+    color:coral;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
